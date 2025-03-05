@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Puzzle Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header id="headLine">
+        <h1>Drag and Drop Puzzle!</h1>
+        <p>Solve the puzzle by dragging the pieces into the correct drop zones.</p>
+    </header>
+
+    <main>
+        <!-- Added a heading for the section -->
+        <section id="game-boards">
+            <!-- Draggable puzzle pieces -->
+            <div class="puzzle-pieces">
+                <img id="topLeft" draggable="true" src="images/topLeft0.jpg" class="puzzle-image" alt="Top left puzzle piece">
+                <img id="topRight" draggable="true" src="images/topRight0.jpg" class="puzzle-image" alt="Top right puzzle piece">
+                <img id="bottomLeft" draggable="true" src="images/bottomLeft0.jpg" class="puzzle-image" alt="Bottom left puzzle piece">
+                <img id="bottomRight" draggable="true" src="images/bottomRight0.jpg" class="puzzle-image" alt="Bottom right puzzle piece">
+            </div>
+        
+            <!-- Drop zones for puzzle pieces -->
+            <div class="puzzle-board">
+                <div class="drop-zone tl"></div>
+                <div class="drop-zone tr"></div>
+                <div class="drop-zone bl"></div>
+                <div class="drop-zone br"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Click a thumbnail to change the puzzle image!</p>
+        <nav id="buttonHolder" aria-label="Puzzle image selector">
+            <img src="images/buttonZero.jpg" data-bgref="0" alt="Thumbnail for puzzle background 0">
+            <img src="images/buttonOne.jpg" data-bgref="1" alt="Thumbnail for puzzle background 1">
+            <img src="images/buttonTwo.jpg" data-bgref="2" alt="Thumbnail for puzzle background 2">
+            <img src="images/buttonThree.jpg" data-bgref="3" alt="Thumbnail for puzzle background 3">
+        </nav>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
